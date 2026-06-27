@@ -1,0 +1,252 @@
+<section class="form c-form o-main-grid__form">
+            <form class="certificate-form">
+                <!-- Nome e CPF -->
+                <!-- <div class="certificate-form__group">
+                    <label class="certificate-form__label" for="aluno"></label>
+                    <input type="text" id="aluno" class="certificate-form__input" placeholder="Digite o nome do aluno">
+                </div>
+
+                <div class="certificate-form__group c-form__cpf">
+                    <label for="activeCpf" class="certificate-form__label"></label>
+                    <input type="checkbox" id="activeCpf">
+                    <label class="certificate-form__label" for="cpf"></label>
+                    <input type="text" id="cpf" class="certificate-form__input" placeholder="CPF do aluno">
+                </div> -->
+
+                <!-- Seção de Endereço -->
+
+
+                <!-- Dados do Treinamento -->
+                <!-- <div class="certificate-form__group">
+                    <label class="certificate-form__label" for="treinamento"></label>
+                    <input type="text" id="treinamento" class="certificate-form__input" placeholder="Treinamento">
+                </div>
+
+                <div class="certificate-form__group">
+                    <label class="certificate-form__label" for="complemento-texto"></label>
+                    <textarea id="complemento-texto" class="certificate-form__textarea"
+                        rows="2">participou do Treinamento de Segurança do Trabalho em Altura,</textarea>
+                </div>
+
+                <div class="certificate-form__group certificate-form__group--row">
+                    <div class="certificate-form__item">
+                        <label class="certificate-form__label" for="data"></label>
+                        <input type="date" id="data" class="certificate-form__input" value="2024-03-01">
+                    </div>
+                    <div class="certificate-form__item">
+                        <label class="certificate-form__label" for="carga-horaria"></label>
+                        <input type="number" id="carga-horaria" class="certificate-form__input"
+                            placeholder="carga horaria">
+                    </div>
+                </div>
+
+                <div class="certificate-form__group">
+                    <label class="certificate-form__label" for="promovido"></label>
+                    <input type="text" id="promovido" class="certificate-form__input"
+                        placeholder="FSC segurança do trabalho">
+                </div>
+
+                <div class="certificate-form__group">
+                    <label class="certificate-form__label" for="nr"></label>
+                    <input type="text" id="nr" class="certificate-form__input"
+                        placeholder="NR (Norma Regulamentadora):">
+                </div>
+
+                <div class="certificate-form__group">
+                    <label class="certificate-form__label" for="instrutores"></label>
+                    <select id="instrutores" class="certificate-form__select">
+                        <option selected>Instrutores</option>
+                        <option>Rivaldo Fernandes da Fonseca</option>
+                        <option>Rivaldo Fernandes da Fonseca</option>
+                    </select>
+                </div> -->
+
+                <!-- Conteúdo Programático -->
+                <!-- 
+                <div class="certificate-form__group">
+                    <input type="checkbox">
+                    <label class="certificate-form__label" for="rua"></label>
+                    <input type="text" id="rua" class="certificate-form__input" placeholder="Rua">
+                </div>
+
+                <div class="certificate-form__group certificate-form__group--row">
+                    <div class="certificate-form__item">
+                        <label class="certificate-form__label" for="numero"></label>
+                        <input type="text" id="numero" class="certificate-form__input" placeholder="Numero da casa">
+                    </div>
+                    <div class="certificate-form__item">
+                        <label class="certificate-form__label" for="complemento"></label>
+                        <input type="text" id="complemento" class="certificate-form__input"
+                            placeholder="Complemento do endereço">
+                    </div>
+                </div>
+
+                <div class="certificate-form__group c-form__cidade-estado">
+                    <input type="text" id="cidade" class="certificate-form__input" placeholder="cidade">
+                    <select id="estado" class="certificate-form__select">
+                        <option selected>PE</option>
+                        <option>AM</option>
+                    </select>
+
+                </div> -->
+
+                <!-- CONTEÚDO PROGRAMÁTICO: -->
+
+                <!-- <div class="certificate-form__group">
+                    <label class="certificate-form__label" for="conteudo-programatico"></label>
+                    <textarea id="conteudo-programatico" class="certificate-form__textarea" rows="4"
+                        placeholder="digite aqui o conteudo programático"></textarea>
+                </div> -->
+
+                <!-- Ações -->
+                <!-- <div class="certificate-form__actions">
+                    <button type="submit" class="certificate-form__button certificate-form__button--primary">Gerar
+                        Certificado</button>
+                    <button type="button" class="certificate-form__button">Baixar PDF</button>
+                </div>
+            </form> -->
+
+        </section>
+        <section class="certificate c-certificate o-certificate-grid  o-main-grid__certificate">
+
+
+            <div class="certificate__front c-certificate-grid__front o-certificate-grid__front ">
+                <div class="certificate__details c-certificate__details">
+                    <div class="certificate c-certificate__logo">
+                        <img src="/src/assets/img/fsc_logo.webp" alt="FSC Segurança do trabalho logo"
+                            class="certificate__logo-img">
+                    </div>
+                    <div class="certificate__body c-certificate__body">
+                        <p>A FSC segurança do trabalho, concede este certificado a:
+                        </p>
+                        <h1 class="certificate__name c-certificate__name">[Nome do colaborador(a)]</h1>
+
+                        <span class="certificate__cpf c-certificate__cpf">[CPF do colaborador(a)]</span>
+                        <div class="c-certificate__text">
+
+                            <span>Certificamos que o(a) Sr.(a)</span>
+                            <span class="certificate__name-text">[Nome do colaborador(a)]</span>
+                            <span>,participou do treinamento em</span>
+                            <span class="certificate__training">[Nome do treinamento]</span>
+                            <span>em confomidade as NR(s)</span>
+                            <span class="certificate__nrs">[Numero da ou das NRs]</span>
+                            <span>, na data de:</span>
+                            <span class="certificate__date">[data do treinamento]</span>
+                            <span>promovido por:</span>
+                            <span class="certificate__institution">
+                                [nome de qual instituição promovel o curso]
+                            </span>
+                            <span>com a carga horaria de:</span>
+                            <span class="certificate__workload">
+                                [carga horaria do curso]
+                            </span>
+                        </div>
+                    </div>
+                    <section class="signatures c-signatures">
+                        <div class="signature c-signature signature--instructor">
+                            <div class="signature__image--wrapper c-signature__image-wrapper">
+                                <img alt="assinatura do instrutor" class="signature__img">
+                            </div>
+                            <hr>
+                            <div class="signature__details c-signature__details">
+                                <p class="signature__name c-signature__name">[nome do instrutor]</p>
+                                <p class="signature__role c-signature__role">
+                                    [qualificação e registro do instrutor]
+                                </p>
+                            </div>
+                        </div>
+                        <div class="signature c-signature signature--responsible">
+                            <div class="signature__image-wrapper c-signature__image-wrapper">
+                                <img alt="assinatura do responsavel" class="signature__img">
+                            </div>
+                            <hr>
+                            <div class="signature__details c-signature__details">
+                                <p class="signature__name c-signature__name">[nome do Instrutor]</p>
+                                <p class="signature__role c-signature__role">
+                                    [qualificação e registro do responsavel]
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="seal c-seal">
+                    <div class="seal__container c-seal__container">
+                        <div class="seal__image c-seal__image">
+                            <img src="src/assets/img/seal-medalha.webp" alt="" class="seal__img c-seal__img">
+                            <p class="c-seal__title">NR</p>
+                            <p class="seal__nr c-seal__nr">
+                                [numero da nr]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate__back c-certificate-grid__back o-certificate-grid__back">
+                <!-- <section class="certificate__back-header o-certificate-grid__back-header">
+                    <div class="certificate__back-image o-certificate__header-image">
+                        <img src="/src/assets/img/fsc_logo.webp" class="certificate__back-img">
+                    </div>
+                    <div class="certificate__back-text o-certificate__header-text">
+
+                        <span>
+                            Treinamento em Segurança com
+                        </span>
+                        <span class="certificate__back-training">
+                            Máquinas e Equipamentos
+                        </span>
+                        <span class="certificate__back-nr">
+                            NR 12
+                        </span>
+                        <span>
+                            realizado na
+                        </span>
+                        <span class="address">
+                            <span class="address__street">
+                                Avenida Antônio de Goes
+                            </span>
+                            <span class="address__house-number">
+                                449
+                            </span>
+                            <span class="address__neighborhood">
+                                Pina (5º andar, sala 501),
+                            </span>
+                            <span class="address__city">
+                                Recife
+                            </span>
+                            <span class="address__state">
+                                PE
+                            </span>
+                        </span>
+
+                        na data de 13/05/2025, com carga horária de 08 horas.
+
+                    </div>
+                    <hr>
+                </section>
+                <section class="programing o-programing">
+                    <h2 class="programing__title o-programing__title">
+                        Conteudo Programático
+                    </h2>
+                    <ol type="a" class="programing__list">
+                        <li>Primeiro</li>
+                        <li>Segundo</li>
+                        <li>Terceiro</li>
+                        <li>Quarto</li>
+                        <li>Quinto</li>
+                    </ol>
+                </section>
+
+                <div class="signature signature--responsible o-signature--responsible">
+                    <div class="signature__image-wrapper o-signature__image-wrapper">
+                        <img alt="assinatura do responsavel" class="signature__img">
+                    </div>
+                    <hr>
+                    <div class="signature__details">
+                        <p class="signature__name">[nome do responsavel]</p>
+                        <p class="signature__role">
+                            [qualificação e registro do responsavel]
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </section>

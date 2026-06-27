@@ -1,0 +1,87 @@
+#front, #back {
+  width: 297mm;
+  height: 210mm;
+  box-sizing: border-box;
+  overflow: hidden; /* Impossibilita que conteúdos vazados criem páginas fantasmas */
+  position: relative;
+  page-break-after: avoid;  /* Bloqueia quebras automáticas indesejadas */
+  page-break-before: avoid;
+}
+
+
+
+
+.o-signatures {
+  grid-area: details__signatures;
+  display: grid;
+  grid-template-areas: "signature__instructor signature__responsible";
+  grid-template-columns: 50% 50%;
+}
+.o-signature__container {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "line"
+    "descriptions";
+  grid-template-rows: 18mm 3mm 22mm;
+  place-items: center;
+}
+#signatureResponsibleImageBack,
+#signatureResponsibleImage{
+  width: auto;
+  height: 11mm;
+}
+.o-signature__image {
+  grid-area: image;
+  /* background-color: blue; */
+  width: 50mm;
+  height: 33mm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.o-signature__line {
+  grid-area: line;
+  width: 100%;
+}
+.o-signature__descriptions {
+  grid-area: descriptions;
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "role role";
+  text-align: center;
+  align-self: self-start;
+}
+.o-signature__img{
+  height: auto;
+  width: 50mm;
+  max-height: 25mm;
+  object-fit: contain;
+  display: block;
+}
+.teste{
+  width: 61mm;
+}
+.o-signature__instructor--name {
+  grid-area: name;
+  /* margin-top: 5mm; */
+}
+.o-signature__role {
+  grid-area: role;
+  text-align: center;
+}
+.o-signature__resgistry {
+  grid-area: registry;
+  text-align: center;
+}
+.o-signature__instructor {
+  grid-area: signature__instructor;
+  display: grid;
+  justify-content: start;
+}
+.o-signature__responsible {
+  grid-area: signature__responsible;
+  display: grid;
+  justify-content: end;
+}

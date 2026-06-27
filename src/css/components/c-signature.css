@@ -1,0 +1,30 @@
+.c-signatures {
+  display: flex;
+  width: 144mm;
+  margin-top: 10mm;
+}
+.c-signature > hr {
+  width: 90%;
+}
+.c-signature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.c-signature__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.c-signature__image-wrapper {
+  width: 200px;
+  height: 50px;
+}
+.c-signature__name {
+  font-weight: bold;
+}
+.c-signature__role {
+  text-align: center;
+}

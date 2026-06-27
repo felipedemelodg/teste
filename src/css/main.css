@@ -1,0 +1,24 @@
+@import url("/src/css/components/c-wrapper.css");
+@import url("/src/css/generics/g-reset.css");
+@import url("/src/css/settings/s-borders.css");
+@import url("/src/css/settings/s-colors.css");
+@import url("/src/css/settings/s-layout.css");
+@import url("/src/css/settings/s-shadows.css");
+@import url("/src/css/settings/s-spacing.css");
+@import url("/src/css/settings/s-typography.css");
+@import url("/src/css/elements/e-typography.css");
+@import url("/src/css/elements/e-links.css");
+@import url("/src/css/elements/e-form.css");
+@import url("/src/css/objects/o-main.css");
+@import url("/src/css/objects/o-form.css");
+@import url("/src/css/objects/o-certificate.css");
+@import url("/src/css/objects/o-certificate__front.css");
+@import url("/src/css/objects/o-certificate__back.css");
+@import url("/src/css/objects/o-signatures.css");
+@import url("/src/css/objects/o-seal.css");
+@import url("/src/css/components/c-certificate.css");
+@import url("/src/css/components/c-form.css");
+@import url("/src/css/tools/t-input-error.css");
+@import url("/src/css/tools/t-select.css");
+/* @import url("/src/css/components/c-seal.css"); */
+/* @import url("/src/css/components/c-signature.css"); */

@@ -1,0 +1,34 @@
+.c-seal {
+  width: 70mm;
+  height: 180mm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.c-seal__container {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  width: 54mm;
+  height: 164mm;
+  background-image: url("/src/assets/img/seal-background-img.webp");
+  background-repeat: no-repeat;
+}
+.c-seal__image {
+  background-image: url("/src/assets/img/seal-medalha.webp");
+  background-repeat: no-repeat;
+  width: 37mm;
+  height: 48mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10mm;
+}
+
+.c-seal__nr{
+    margin-bottom: 15mm;
+}

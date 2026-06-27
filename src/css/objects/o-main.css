@@ -1,0 +1,16 @@
+.o-main-grid {
+  display: grid;
+  grid-template-columns: 300px calc((100vw - 300px));
+  grid-template-areas:
+  "form error"
+  "form cert";
+  background-color: var(--gray-300);
+}
+.erro__display{
+  grid-area: error;
+  /* width: 200px; */
+  height: 20px;
+  background-color: var(--gray-700)
+}
+
+

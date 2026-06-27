@@ -1,0 +1,59 @@
+.o-cert__page--back {
+  grid-area: pages;
+  z-index: 1;
+  display: grid;
+  grid-template-areas: "back__container";
+  padding: 15mm;
+  background-image: url('/src/assets/img/background-back__img.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.o-cert--back__container {
+  grid-area: back__container;
+  display: grid;
+  grid-template-areas:
+    "back__header"
+    "back__content"
+    "back__signature";
+}
+.o-cert--back__header {
+  display: grid;
+  grid-area: back__header;
+  grid-template-areas: 
+  "logo adress"
+  "line line";
+  grid-template-columns: 64mm 203mm;
+  grid-template-rows: 43mm;
+}
+.o-cert--back__line{
+  grid-area: line;
+  width: 100%;
+  border: .5mm solid var(--color-primary)
+}
+.o-cert__back{
+  padding: 10mm 12mm;
+}
+.o-cert__logo-back{
+  grid-area: logo;
+  align-self: center;
+  justify-self: center;
+}
+.o-cert--back__content {
+  display: grid;
+  grid-area: back__content;
+  grid-template-rows: 82mm;
+}
+.o-cert__programming-title{
+  margin-bottom: 10mm;
+}
+.o-cert--back__signature {
+  display: grid;
+  grid-area: back__signature;
+  grid-template-rows: 56mm;
+  grid-template-areas: "signature";
+  place-items: center;
+}
+.o-signature__responsible-back{
+  grid-area: signature;
+  width: 100mm;
+}

@@ -1,0 +1,50 @@
+/* Seleciona os tipos de input mais comuns e textarea */
+input:where([type="text"], [type="email"], [type="password"], [type="number"]),
+textarea,
+select,
+button {
+  /* 1. Reset e Box Model */
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  /* 2. Tipografia */
+  font-family: inherit; /* Herda do body/html definido em Elements */
+  font-size: var(--font-size-minimal);
+
+  /* 3. Estética */
+  padding: var(--spacing-xs) var(--spacing-md);
+  /* ###corigir borda duplicada */
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  /* 4. Transição suave */
+  transition: border-color 0.2s;
+}
+select,
+.o-training__date,
+input::placeholder,
+textarea::placeholder {
+  font-size: 10pt;
+}
+/* Interação */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+  border-color: var(--color-primary);
+}
+input {
+  margin-bottom: var(--spacing-s);
+}
+
+/* Ajuste para Textarea */
+textarea {
+  min-height: 80px;
+  resize: vertical;
+  margin-bottom: var(--spacing-s);
+}
+select {
+  margin-bottom: var(--spacing-s);
+}

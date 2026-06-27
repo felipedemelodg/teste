@@ -1,0 +1,4 @@
+.t-input-error {
+  border: 2px solid #ff0000 !important;
+  outline: none !important
+}

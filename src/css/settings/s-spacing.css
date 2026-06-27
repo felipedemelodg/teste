@@ -1,0 +1,13 @@
+:root {
+  --spacing-mm-xs: 2mm;
+  --spacing-mm-sm: 3mm;
+  --spacing-mm-md: 10mm;
+  --spacing-mm-lg: 20mm;
+  --spacing-mm-xl: 40mm;
+  --safe-area: 3mm;
+
+  --spacing-xs: 0.2rem; /*  4px */
+  --spacing-sm: 0.5rem; /*  8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 2rem; /* 32px */
+}

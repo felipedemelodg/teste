@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <!-- <script type="module" src="./src/js/modules/components/certificatePreview.js" defer></script> -->
+    <title>FSC Gerador de Certificados</title>
+
+
+</head>
+
+<body>
+    <section class="o-main-grid">
+        <div class="erro__display" id="error-display">
+        </div>
+        <section class="o-form c-form">
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- student -->
+            <fieldset class="o-form__group o-form__group--student">
+                <input id="student__name" type="text" class="o-student o-student__name"
+                    placeholder="Digite o nome do aluno" value="NOME DO COLOBORADOR(a)">
+                <input id="student__cpf" type="text" class="o-student o-student__cpf"
+                    placeholder="clique para habilitar o CPF" disabled>
+                <input type="checkbox" id="enable__cpf" class="o-enable__cpf">
+            </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- training -->
+            <fieldset class="o-form__group o-form__group--training">
+                <input id="training__name" type="text" class="o-training o-training__name"
+                    placeholder="digite qual o treinamento">
+                <textarea id="training__description" class="o-training o-training__desciption"
+                    placeholder="Digite um texto complementar para descrever o treinamento"></textarea>
+                <input id="training__date" class="o-training o-training__date" type="date">
+
+                <input id="training__promoter" class="o-training o-training__promoter" type="text"
+                    placeholder="Quem esta promovendo o treinamento?">
+
+                <input id="training__workload" class="o-training o-training__workload" type="number"
+                    placeholder="carga horaria">
+
+                <input id="training__regulation" class="o-training o-training__regulation" type="text"
+                    placeholder="Digite a NR (Norma regulatória)">
+
+                <select id="training__instructor" class="o-training o-training__instructor__list">
+
+                </select>
+
+
+
+
+
+
+
+
+
+
+
+                <!-- programming -->
+            </fieldset>
+            <div id="enable__programming">
+                <input id="enableProgrammingCheckbox" type="checkbox">
+                Habilitar Conteúdo programático
+            </div>
+            <fieldset id="programmingGroup" class="o-form__group o-form__group--programing" disabled>
+
+                <input id="programmingStreetName" class="o-programming o-programming__street--name" type="text"
+                    placeholder="Digite o nome rua">
+                <input id="programmingHouseNumber" class="o-programming o-programming__house--number" type="number"
+                    placeholder="numero">
+                <input id="programmingNeigborhood" type="text" class="o-programming o-programming__neighborhood"
+                    placeholder="Bairro">
+                <input id="programmingComplement" type="text" class="o-programming o-programming__complement"
+                    placeholder="ex: Casa ou apartamento">
+                <input id="programmingCity" type="text" class="o-programming o-programming__city" placeholder="Cidade">
+                <input id="programmingState" type="text" class="o-programming o-programming__state"
+                    placeholder="Estado">
+
+                <div class="o-programming o-programming__list">
+                    <ol id="programmingItens" class="o-programming__itens">
+                    </ol>
+                    <div class="o-programming__controls">
+
+                        <input id="programmingTextField" class="o-programming__text" type="text"
+                            placeholder="Digite e tecle + para confirmar">
+
+                        <button id="programmingButtonAdd"
+                            class=" o-programming__button o-programming__button-add">+</button>
+                        <!-- <button disabled id="programmingButtonRemove" class="o-programming__button o-programming__button-remove">-</button> -->
+                        <button disabled id="programmingButtonEdit"
+                            class="o-programming__button o-programming__button-edit">E</button>
+                    </div>
+
+                </div>
+            </fieldset>
+
+
+            <fieldset class="o-form__group o-form__group--submit">
+                <button id="build__button" class="o-submit o-build__button">Gerar</button>
+                <button id="donwload__button" class="o-submit o-download__button">Baixar</button>
+            </fieldset>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!--###Certificate -->
+        <section class="o-cert">
+            <div class="o-cert__container">
+
+                <!-- ###front -->
+                <div id="front" class="o-cert__page o-cert__page--front c-cert c-cert__front">
+                    <div class="o-cert__details--container">
+                        <div class="o-cert__details">
+                            <div class="o-cert__image">
+                                <img src="src/assets/img/fsc_logo.webp" class="o-cert__img">
+                            </div>
+                            <div class="o-cert__text">
+                                <span>A fsc segurança do trabalho, concede este certificado a:
+                                </span>
+                                <h1 id="certName" class="o-cert__text--name">NOME DO COLOBORADOR(a)</h1>
+                                <span id="certCPF" class="o-cert__text--cpf">CPF: 000.000.000-00</span>
+                                <span id="certTextBody" class="o-cert__text--body">
+                                    <span>
+                                        Certificamos que o(a) colaborador(a) participou do treinamento de
+                                    </span>
+                                    <strong> <span id="certTrainingText" class="o-cert__text--training">
+                                        </span>,
+                                    </strong>
+                                    <span id="certTrainingName">
+                                    </span>
+                                    <span>
+                                        em conformidade com a Nr(s)
+                                    </span>
+                                    <strong>
+                                        <span id="certNrs" class="o-cert__text--regulation">
+                                           06, 07 e 23
+                                        </span>,
+                                    </strong>
+                                   realizado em
+                                    <strong>
+                                        <span id="certDateDetails" class="o-cert__text--date">
+                                            realizado em 15/08/2025
+                                        </span>,
+                                    </strong>
+                                    promovido por:
+                                    <strong>
+                                        <span id="certPromoter" class="o-cert__text--promoter">
+                                            promovido por: ALTERNATIVA SERVIÇOS
+                                        </span>,
+                                    </strong>
+                                    <span>
+                                        com a carga horária de
+                                    </span>
+                                    <strong>
+
+                                        <span id="certWorkLoader" class="o-cert__text--workload">
+                                            04 
+                                        </span>
+                                        <span> horas.</span>
+                                    </strong>
+                                </span>
+                            </div>
+
+
+
+                            <div class="o-signatures">
+                                <div class="o-signature__instructor">
+                                    <div class="o-signature__container">
+                                        <div class="o-signature__image">
+                                            <img id="signatureInstructorImage" src="" alt="" class="o-signature__img">
+                                        </div>
+                                        <hr class="o-signature__line">
+                                        <div class="o-signature__descriptions c-signature__descriptions">
+                                            <span id="signatureInstructorName"
+                                                class="o-signature__instructor--name c-signature__instructor--name">
+                                                Luiz Alves
+                                            </span>
+                                            <span id="signatureInstructorRoles" class="o-signature__role">
+                                                Técnico em Eletrotécnica
+                                            </span>
+                                            <!-- <span id="signatureInstructorRegistry" class="o-signature__resgistry">
+                                                RNP CFT Nº 02122860480
+                                            </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o-signature__responsible">
+                                    <div class="o-signature__container">
+                                        <div class="o-signature__image">
+                                            <img id="signatureResponsibleImage"
+                                                src="./src/assets/img/assinatura-dono.webp" loading="eager" alt=""
+                                                class="o-signature__img">
+                                        </div>
+                                        <hr class="o-signature__line">
+                                        <div class="o-signature__descriptions c-signature__descriptions">
+                                            <span id="signatureResponsibleName"
+                                                class="o-signature__instructor--name c-signature__instructor--name">
+                                                Luiz Alves
+                                            </span>
+                                            <span id="signatureResponsibleCNPJ" class="o-signature__role">
+                                                Técnico em Eletrotécnica
+                                            </span>
+                                            <!-- <span class="o-signature__resgistry">
+                                                RNP CFT Nº 02122860480
+                                            </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- ###seal -->
+                    <div class="o-seal">
+                        <div class="o-seal__container">
+                            <div class="o-seal__image">
+                                <img src="src/assets/img/seal-medalha.webp" alt="" class="o-seal__img">
+                                <div class="o-seal__content">
+                                    <strong>
+                                        <p class="o-seal__title">NR</p>
+                                    </strong>
+                                    <p id="sealNr" class="o-seal__nr">35</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <!-- ##back -->
+                <div id="back" class="o-cert__page o-cert__page--back c-cert">
+                    <div class="o-cert--back__container">
+                        <div class="o-cert--back__header">
+                            <img src="src/assets/img/fsc_logo.webp" alt="" class="o-cert__back o-cert__logo-back">
+                            <div class="o-cert__back o-cert__adress-back">
+                                Treinamento em
+                                <span id="certTrainingNameBack" class="o-cert__emphasis o-cert__training-back">
+                                    Segurança com Máquinas e Equipamentos
+                                </span>
+                                em conformidade com a Nr(s):
+                                <span id="certRegulatios" class="o-cert__emphasis o-cert__nr-back">
+                                    – NR 12
+                                </span>
+                                realizado na
+                                <span id="certStreetName" class="o-cert__emphasis o-cert__street">
+                                    Avenida Antônio de Goes,
+                                </span>
+                                <span id="certHouseNumber" class="o-cert__emphasis o-cert__house-number">
+                                    449,
+                                </span>
+                                <span id="certNeighborhood" class="o-cert__emphasis o-cert__neighborhood">
+                                    Pina,
+                                </span>
+                                <span id="certComplement" class="o-cert__emphasis o-cert__complement">
+                                    <!-- (5º andar, sala 501), -->
+                                </span>
+                                <span id="certCity" class="o-cert__emphasis o-cert__city">
+                                    Recife
+                                </span>-
+                                <span id="certState" class="o-cert__emphasis o-cert__state">
+                                    PE
+                                </span>
+                              realizado em
+                                <span id="certDate" class="o-cert__emphasis o-cert__date">
+                                    13/05/2025,
+                                </span>
+                                com carga horária de
+                                <span id="certWorkLoad" class="o-cert__emphasis o-cert__workload">
+                                    08 horas.
+                                </span>
+                            </div>
+                            <hr class="o-cert--back__line">
+                        </div>
+                        <div class="o-cert--back__content">
+                            <div class="o-cert__programming o-cert__back">
+                                <h2 class="o-cert__programming-title">CONTEUDO PROGRAMÁTICO:</h2>
+                                <ol id="certProgrammingItens" class="o-cert__programming-list">
+                                    <li>
+                                        Identificação de Riscos e Perigos;
+                                    </li>
+                                    <li> Medidas Preventivas;</li>
+                                    <li> Procedimentos de Segurança;</li>
+                                    <li> Normas e Regulamentações;</li>
+                                    <li> Primeiros Socorros e Resposta a Emergências;</li>
+                                    <li> Importância da Comunicação.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="o-cert--back__signature">
+                            <div class="o-signature__responsible-back">
+                                <div class="o-signature__container">
+                                    <div class="o-signature__image">
+                                        <img id="signatureResponsibleImageBack"
+                                            src="./src/assets/img/assinatura-dono.webp" loading="eager" alt=""
+                                            class="o-signature__img">
+                                    </div>
+                                    <hr class="o-signature__line">
+                                    <div class="o-signature__descriptions">
+                                        <span class="o-signature__instructor--name o-cert__emphasis">
+                                            Fábio Sampaio
+                                        </span>
+                                        <span class="o-signature__role">
+                                            FSC SEGURANÇA DO TRABALHO
+                                            39.522.472/0001-40
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>

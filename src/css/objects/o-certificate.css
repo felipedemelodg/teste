@@ -1,0 +1,26 @@
+.o-cert {
+  grid-area: cert;
+  background-color: var(--gray-700);
+  display: grid;
+  grid-template-areas: "pages__container";
+  align-content: center;
+  height: 100vh;
+}
+.o-cert__container {
+  grid-area: pages__container;
+  background-color: var(--gray-600);
+  width: 297mm;
+  height: 210mm;
+  transform: scale(0.7);
+  transform-origin: center center;
+  display: grid;
+  grid-template-areas: "pages";
+}
+.o-cert__page {
+  width: 297mm;
+  height: 210mm; 
+}
+.o-cert__emphasis{
+  font-style: italic;
+  font-weight: bold ;
+}

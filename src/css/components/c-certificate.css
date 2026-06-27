@@ -1,0 +1,12 @@
+.c-cert{
+  background-color: var(--color-background);
+}
+.c-cert__front{
+  border: 15mm solid var(--color-primary)
+}
+.c-signature__descriptions{
+  font-weight: lighter;
+}
+.c-signature__instructor--name{
+  font-weight: bold;
+}

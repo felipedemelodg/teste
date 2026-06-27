@@ -1,0 +1,179 @@
+.o-form {
+  grid-area: form;
+  width: 300px;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "student"
+    "training"
+    "enable__programming "
+    "programing"
+    "submit";
+  /* grid-template-rows: 50px 180px 130px 40px; */
+  grid-template-rows: 60px 264px 10px 234px 40px;
+  padding: 0 var(--spacing-md);
+  justify-self: space-around;
+  align-content: space-around;
+}
+
+.o-form__group {
+  grid-auto-rows: 30px;
+}
+.o-programming{
+  font-size: var(--font-size-minimal);
+}
+input {
+  margin: 2px 0;
+}
+.o-form__group--student {
+  display: grid;
+  grid-template-areas:
+    "student__name"
+    "student__cpf";
+}
+
+.o-student__name {
+  grid-area: student__name;
+}
+.o-student__cpf {
+  grid-area: student__cpf;
+}
+.o-enable__cpf {
+  grid-area: student__cpf;
+  justify-self: flex-end;
+  margin-right: 10px;
+}
+
+.o-form__group--training {
+  display: grid;
+  grid-template-rows: auto 80px auto auto auto auto auto;
+  grid-template-areas:
+    "training__name"
+    "training__desciption"
+    "training__date"
+    "training__promoter"
+    "training__workload"
+    "training__regulation"
+    "training__instructor__list";
+}
+
+.o-training__name {
+  grid-area: training__name;
+}
+.o-training__desciption {
+  grid-area: training__desciption;
+}
+.o-training__date {
+  grid-area: training__date;
+}
+.o-training__promoter {
+  grid-area: training__promoter;
+}
+.o-training__workload {
+  grid-area: training__workload;
+}
+.o-training__regulation {
+  grid-area: training__regulation;
+}
+.o-training__instructor__list {
+  grid-area: training__instructor__list;
+}
+
+.o-form__group--programing {
+  display: grid;
+  grid-template-rows: auto auto auto auto 100px;
+  grid-template-areas:
+    /* "enable__programming enable__programming" */
+    "programming__street--name programming__house--number"
+    "programming__neighborhood programming__neighborhood"
+    "programming__complement programming__complement"
+    "programming__city programming__state"
+    "programming__list programming__list";
+}
+#enable__programming{
+  grid-area: enable__programming;
+  justify-self: start;
+  font-size: var(--font-size-minimal)
+}
+.o-programming__street--name {
+  grid-area: programming__street--name;
+  width: 160px;
+}
+.o-programming__house--number {
+  grid-area: programming__house--number;
+  width: 100px;
+  justify-self: end;
+}
+.o-programming__neighborhood {
+  grid-area: programming__neighborhood;
+}
+.o-programming__complement {
+  grid-area: programming__complement;
+}
+.o-programming__city {
+  grid-area: programming__city;
+  width: 160px;
+}
+.o-programming__state {
+  grid-area: programming__state;
+  width: 100px;
+  justify-self: end;
+}
+.o-programming__list {
+  border: 1px solid lightblue;
+  grid-area: programming__list;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.o-programming__itens{
+  /* position: fixed; */
+  overflow-y: auto; 
+}
+.o-programming__controls{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.o-programming__text{
+  width: 80%;
+}
+.o-programming__button{
+  padding: 0;
+  margin:0;
+  width: 10%;
+  height: 90%;
+  cursor: pointer;
+}
+.o-programmig__button--iten{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.o-programmig__button--delete{
+  margin-left: auto;
+  
+  width: 20px;
+  padding: 0;
+}
+#signatureResponsibleCNPJ{
+  width: 78mm
+}
+.o-programming__iten-text{
+  padding: 0 10px;
+}
+.o-form__group--submit {
+  display: grid;
+  grid-template-areas: "build__button download__button";
+  justify-content: space-between;
+  padding: 1mm 0;
+}
+.o-build__button {
+  grid-area: build__button;
+  width: 130px;
+}
+.o-download__button {
+  grid-area: download__button;
+  width: 130px;
+}

@@ -1,0 +1,12 @@
+:root {
+  --border-width-hairline: 0.1mm;
+  --border-width-thin: 0.25mm;
+  --border-width-medium: 0.5mm;
+  --border-width-thick: 1mm;
+
+  --radius-sm: 0.3rem;
+
+  --border-color-main: var(--color-accent);
+  --border-color-muted: rgba(0, 0, 0, 0.15);
+  --border-color-smooth: var(--color-smooth);
+}

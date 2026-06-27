@@ -1,0 +1,9 @@
+:root {
+  --layout-width: 210mm;
+  --layout-height: 297mm;
+
+  --grid-gutter: 5mm;
+  --grid-margin: 15mm;
+
+  --col-width: 40mm;
+}

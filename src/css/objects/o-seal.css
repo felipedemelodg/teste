@@ -1,0 +1,38 @@
+.o-seal{
+    grid-area: seal__container;
+    display: grid;
+    grid-template-areas: 
+    "seal__container"
+    ;
+}
+.o-seal__container{
+    grid-area: seal__container;
+    display: grid;
+    grid-template-areas: 
+    "seal__image-medalha";
+    grid-template-rows: 164mm;
+    grid-template-columns: 54mm;
+    justify-content: center;
+    align-content: center;
+}
+.o-seal__image{
+    background-image: 
+    url('/src/assets/img/seal-background-img.webp');
+    background-repeat: no-repeat;
+    grid-area: seal__image-medalha;
+    display: grid;
+    place-content: start; 
+    justify-content: center;
+    /* position: relative */
+    text-align: center;
+}
+.o-seal__title, .o-seal__content, .o-seal__img{
+    margin-top: 5mm;
+    grid-area: seal__image-medalha;
+    align-content: center;
+    /* width: auto; */
+    /* height: 48mm; */
+}
+.o-seal__content{
+    margin-top: -10mm;
+}

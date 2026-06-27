@@ -1,0 +1,42 @@
+.o-cert__page--front {
+  /* padding: 15mm; */
+  grid-area: pages;
+  background-color: var(--color-background);
+  z-index: 2;
+  display: grid ;
+  grid-template-areas: "details__container seal__container";
+  grid-template-columns: 197.5mm 70mm;
+}
+.o-cert__details--container {
+  grid-area: details__container;
+  display: grid;
+  grid-template-areas: "details__content";
+  /* height: 164mm; */
+  /* width: 150mm; */
+  padding: 10mm 20mm;
+}
+.o-cert__details {
+  grid-area: details__content;
+  display: grid;
+  grid-template-rows: 50mm 67mm 47mm;
+  grid-template-areas:
+    "details__image"
+    "details__text"
+    "details__signatures";
+}
+.o-cert__image{
+  display: grid;
+  grid-area: details__image;
+  place-content: center;
+}
+
+.o-cert__text{
+  display: grid;
+  grid-area: details__text;
+  text-align: center;
+  /* place-content: center; */
+  align-content: center;
+}
+.o-cert__text--body{
+  text-align: justify;
+}

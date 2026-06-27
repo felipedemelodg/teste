@@ -1,0 +1,20 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+  cursor: pointer;
+}
+ol {
+  list-style-type: none; /* Remove o 'a.' padrão */
+  counter-reset: item;   /* Cria um contador */
+}
+li::before {
+  content: counter(item, lower-alpha) ") "; /* Define o formato 'a)' */
+  counter-increment: item;
+}
+hr{
+  border: 1px solid var(--gray-800);
+  height: 1px;
+  width: 70%;
+}

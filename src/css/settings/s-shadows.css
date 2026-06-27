@@ -1,0 +1,6 @@
+:root {
+  --shadow-sm: 0mm 0.5mm 1.5mm 0mm rgba(0, 0, 0, 0.15);
+  --shadow-md: 0mm 1mm 3mm 0mm rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0mm 2mm 6mm 0mm rgba(0, 0, 0, 0.15);
+  --shadow-flat: 0mm 0mm 2mm 0.5mm rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  /* max-width: 100%; */
+  display: block;
+}
+
+html,
+body {
+  overflow-y: hidden;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0; /* Corrige um bug de largura excessiva no Chrome/Firefox */
+}
+
+@page {
+  /* Zera as margens nativas do browser (retira URLs, datas e contadores automáticos) */
+  size: A4 portrait;
+  margin: 0;
+}
+button{
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media print {
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
