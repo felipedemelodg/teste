@@ -102,61 +102,65 @@ export class ProgrammingForm {
     this.programmingCity.value = 'Recife';
     this.programmingEstado.value = 'PE';
   }
-  programmingNumberElements(){
+  programmingNumberElements() {
     console.log(this.programmingItens)
   }
 
   buildProgrammingStreetName(field) {
-    field.textContent = this.programmingStreetName.value+','
+    field.textContent = this.programmingStreetName.value + ','
   }
   buildprogrammingHouseNumber(field) {
-    field.textContent = this.programmingHouseNumber.value+','
+    field.textContent = this.programmingHouseNumber.value + ','
   }
   buildprogrammingNeigborhood(field) {
-    field.textContent = this.programmingNeigborhood.value+','
+    field.textContent = this.programmingNeigborhood.value + ','
   }
   buildprogrammingComplement(field) {
-    field.textContent = this.programmingComplement.value+','
+    field.textContent = this.programmingComplement.value + ','
   }
   buildprogrammingCity(field) {
     field.textContent = this.programmingCity.value
   }
   buildprogrammingEstado(field) {
-    field.textContent = this.programmingEstado.value+','
+    field.textContent = this.programmingEstado.value + ','
   }
   buildprogrammingDate(field) {
-    field.textContent = this.trainingDate.value+','
+    const array = (this.trainingDate.value.split('-'))
+    const ano = array[0]
+    const mes = array[1]
+    const dia = array[2]
+    field.textContent = `${dia}/${mes}/${ano},`
   }
   buildprogrammingTrainingName(field) {
     field.textContent = this.inputTraining.value
   }
   buildprogrammingTrainingRegulation(field) {
-    field.textContent = this.trainingRegulation.value+','
+    field.textContent = this.trainingRegulation.value + ','
   }
   buildprogrammingTrainingWorkload(field) {
-    field.textContent = this.trainingWorkload.value+' Horas.'
+    field.textContent = this.trainingWorkload.value + ' Horas.'
   }
   buildprogrammingTrainingComplement(field) {
-    if(this.programmingComplement.value=="") return
+    if (this.programmingComplement.value == "") return
     field.textContent = `(${this.programmingComplement.value})`
   }
   buildprogrammingTrainingDescription(field) {
-    field.textContent = this.trainingDescription.value+','
+    field.textContent = this.trainingDescription.value + ','
   }
 
-  buildprogrammingTrainingprogrammingItens(field){
+  buildprogrammingTrainingprogrammingItens(field) {
     const elements = (this.programmingItens.getElementsByClassName('o-programming__iten-text'))
-    const array = Array.from(elements).map(el=> el.textContent)
-    const arrayLi = (array.map(value=> `<li>${value}</li>`).join(''))
+    const array = Array.from(elements).map(el => el.textContent)
+    const arrayLi = (array.map(value => `<li>${value}</li>`).join(''))
     field.innerHTML = arrayLi
   }
 
 
-  programmingItensNumber(){
+  programmingItensNumber() {
     return this.programmingItens.children.length
   }
-  programmingPlus(){
-    return this.programmingItens.childNodes.length++ 
+  programmingPlus() {
+    return this.programmingItens.childNodes.length++
   }
 
 }

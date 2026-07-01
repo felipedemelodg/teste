@@ -40,7 +40,6 @@ export class TrainingForm {
     const ano = array[0]
     const mes = array[1]
     const dia = array[2]
-
     field.textContent = `${dia}/${mes}/${ano}`
   }
   trainingBuildPromoter(field) {
