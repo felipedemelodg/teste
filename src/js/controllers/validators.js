@@ -42,14 +42,14 @@ export function validateCertificateData(data, action = 'GENERATE') {
     },
     {
       field: 'trainingRegulation',
-      error: action === 'GENERATE' && !Model.isValidLength(data.trainingRegulation),
+      error: action === 'GENERATE' && !Model.isValidLengthTwo(data.trainingRegulation),
       message: `Treinamento ${ERROR.empty}`
     },
-    {
-      field: 'trainingRegulation',
-      error: action === 'GENERATE' && !Model.isValidLength(data.trainingRegulation),
-      message: `Treinamento ${ERROR.empty}`
-    },
+    // {
+    //   field: 'trainingRegulation',
+    //   error: action === 'GENERATE' && !Model.isValidLength(data.trainingRegulation),
+    //   message: `Treinamento ${ERROR.empty}`
+    // },
     {
       field: "programmingStreetName",
       error: action === 'GENERATE' && data.enableProgrammingCheckbox && !Model.isValidLength(data.programmingStreetName),
