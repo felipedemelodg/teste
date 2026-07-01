@@ -51,7 +51,6 @@ export default class View {
   }
 
   triggerPDFDownload(isTwoPagesActive) {
-    console.log('ok')
     this.certificatePreview.generatePDF(isTwoPagesActive);
   }
 
@@ -250,10 +249,10 @@ export default class View {
 
   loadDate(initHandler) {
     document.addEventListener('DOMContentLoaded', () => {
-      this.studentForm.inputName.value = 'NOME DO COLOBORADOR(a)';
-      this.studentForm.inputCpf.value = 'CPF: 000.000.000-00';
-      this.trainingForm.loadMockData();
-      this.programmingForm.loadMockData();
+      // this.studentForm.inputName.value = 'NOME DO COLOBORADOR(a)';
+      // this.studentForm.inputCpf.value = 'CPF: 000.000.000-00';
+      // this.trainingForm.loadMockData();
+      // this.programmingForm.loadMockData();
       initHandler();
     });
   }
