@@ -21,7 +21,7 @@ export default class Model {
         ELI: {
             signature: '/src/assets/img/eliC__signature.webp',
             name: "Eli Carlos de Souza Pinto",
-            roles: ["Técnico de Segurança do Trabalho", "Profissional de Educação Física"],
+            roles: ["TST:", "Profissional de Ed. Física"],
             registry: ["Reg. MTE 4147-PE", "CREF: 009903-G/PE"]
         }
 
