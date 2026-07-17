@@ -34,6 +34,7 @@ export class InstructorSelect {
       LUIZ: obj.LUIZ.signature,
       RIVALDO: obj.RIVALDO.signature,
       UMBERTO: obj.UMBERTO.signature,
+      ELI: obj.ELI.signature,
     }
     return signature
   }
@@ -42,6 +43,7 @@ export class InstructorSelect {
       LUIZ: obj.LUIZ.roles,
       RIVALDO: obj.RIVALDO.roles,
       UMBERTO: obj.UMBERTO.roles,
+      ELI: obj.ELI.roles,
     }
     return roles
   }
@@ -50,6 +52,7 @@ export class InstructorSelect {
       LUIZ: obj.LUIZ.registry,
       RIVALDO: obj.RIVALDO.registry,
       UMBERTO: obj.UMBERTO.registry,
+      ELI: obj.ELI.registry,
     }
     return registry
   }
@@ -58,6 +61,7 @@ export class InstructorSelect {
       LUIZ: obj.LUIZ.name,
       RIVALDO: obj.RIVALDO.name,
       UMBERTO: obj.UMBERTO.name,
+      ELI: obj.ELI.name,
     }
     return name
   }
@@ -80,6 +84,7 @@ export class InstructorSelect {
     return this.signatureInstructorRegistry
   }
   intercalarArrays(arr1, arr2) {
+    console.log(arr1,arr2)
     const maiorTamanho = Math.max(arr1.length, arr2.length);
     const resultado = [];
 

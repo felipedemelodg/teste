@@ -17,6 +17,12 @@ export default class Model {
             name: "Umberto Alves",
             roles: ["SIBOCIPE", "APEBC"],
             registry: ["0019", "B-10046"]
+        },
+        ELI: {
+            signature: '/src/assets/img/eliC__signature.webp',
+            name: "Eli Carlos de Souza Pinto",
+            roles: ["SIBOCIPE", "APEBC"],
+            registry: ["0019", "B-10046"]
         }
 
     }
